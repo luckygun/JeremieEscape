@@ -1,2 +1,2 @@
-# JeremieEscape
+# JeremyEscape
 Petit jeu online
