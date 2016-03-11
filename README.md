@@ -1,2 +1,2 @@
 # JeremieEscape
-Petit jeux online
+Petit jeu online
