@@ -1,11 +1,11 @@
 ﻿
 var _couleur = {
-    C_0 : "#FFFFFF",
-    C_1 : "#242424",
-    C_2 : "#42E8CD",
-    C_3 : "#E81C3C",
-    C_4 : "#E8FF3C",
-    C_5 : "#FFFF3C",
+    C_0 : "#FFFFFF", //blanc
+    C_1 : "#242424", //gris
+    C_2 : "#42E8CD", //turquoise
+    C_3 : "#E81C3C", //rose
+    C_4 : "#E8FF3C", //jaune
+    C_5 : "#FFFF3C", //jaune clair
 };
 
 var _map; // Le tableau dans lequel sera stocké le laby
@@ -15,29 +15,6 @@ var _tailleMax; // Le nombre de case
      
 _tailleMax = 29;
 _tailleCase = 25;
-
-
-window.onload = function(){
-	var forme;
-     
-    /* Initialisation de la zone Canvas */
-    // Recuperation de l'element canvas
-    forme = document.getElementById("mon_canvas");
-    //On lui donne une hauteur et largeur, faites vous plaiz'
-    forme.width =forme.height  = _tailleCase * _tailleMax;
-    forme.style.marginLeft = (window.innerWidth - forme.width)*0.5+'px';
-    forme.style.marginTop = (window.innerHeight - forme.height)*0.2+'px';
-     
-    //Recuperation du contexte canvas
-    _context = forme.getContext("2d");  
-     
-    // Génération du laby 
-    _map = genererLaby(_tailleMax);
-     
-    //Dessin du laby
-    dessiner(_context);
-	
-}
 
 function dessinerCarre(taille, couleur, ctx, x, y){
     ctx.fillStyle = couleur;
