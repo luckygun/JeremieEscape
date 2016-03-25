@@ -3,7 +3,7 @@ window.onload = function(){
      
     /* Initialisation de la zone Canvas */
     // Recuperation de l'element canvas
-    forme = document.getElementById("mon_canvas");
+    forme = document.getElementById("board");
     //On lui donne une hauteur et largeur, faites vous plaiz'
     forme.width =forme.height  = _tailleCase * _tailleMax;
     forme.style.marginLeft = (window.innerWidth - forme.width)*0.5+'px';
@@ -17,5 +17,8 @@ window.onload = function(){
      
     //Dessin du laby
     dessiner(_context);
+    
+    var jeremy = new Jeremy();
+    alert(jeremy.orientation);
 	
 }
