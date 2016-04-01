@@ -19,6 +19,8 @@ window.onload = function(){
     dessiner(_context);
     
     var jeremy = new Jeremy();
-    alert(jeremy.orientation);
+    //alert(jeremy.orientation);
+    console.log(_map[1][2]);
+    jeremy.canWalk(_map, 5, 6);
 	
 }
