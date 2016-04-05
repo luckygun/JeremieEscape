@@ -18,9 +18,10 @@ window.onload = function(){
     //Dessin du laby
     dessiner(_context);
     
-    var jeremy = new Jeremy();
+    var jeremy = new Jeremy(_map);
     //alert(jeremy.orientation);
     console.log(_map[1][2]);
-    jeremy.canWalk(_map, 5, 6);
+    var res = jeremy.canWalk(5, 6);
+    console.log(res);
 	
 }

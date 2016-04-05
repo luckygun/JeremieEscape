@@ -2,6 +2,9 @@
 
 // mur = 2
 
+var PLAYER = 3;
+var WALL = 2;
+
 var _couleur = {
     C_0 : "#FFFFFF", //blanc
     C_1 : "#242424", //gris
