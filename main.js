@@ -21,7 +21,11 @@ window.onload = function(){
     var jeremy = new Jeremy(_map);
     //alert(jeremy.orientation);
     console.log(_map[1][2]);
-    var res = jeremy.canWalk(5, 6);
-    console.log(res);
+    //var res = jeremy.canWalk(5, 6);
+    for (var i = 0 ; i < 5 ; i++) {
+    	jeremy.turnRight();
+        console.log(jeremy.orientation);
+    }
+    
 	
 }
