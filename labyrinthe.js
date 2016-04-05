@@ -127,14 +127,14 @@ function dessiner(context){
             // Utilisation d'un switch, plus pratique qu'une indexation
             // lors de la présence de cas particuliers
             switch(_map[x][y]){
-                case 2 :
-                    c = _couleur.C_1;
+                case 2 : // Mur
+                    c = _couleur.C_1; // Noir / gris
                     break;
-                case 3 :
-                    c = _couleur.C_2;
+                case 3 : // Joueur
+                    c = _couleur.C_2; // Bleu
                     break;
-                case 4 :
-                    c = _couleur.C_3;
+                case 4 : // Sortie -> position départ Jeremy
+                    c = _couleur.C_3; // Rose
                     break;
                 case 5 :
                     c = _couleur.C_4;

@@ -6,8 +6,8 @@ window.onload = function(){
     forme = document.getElementById("board");
     //On lui donne une hauteur et largeur, faites vous plaiz'
     forme.width =forme.height  = _tailleCase * _tailleMax;
-    forme.style.marginLeft = (window.innerWidth - forme.width)*0.5+'px';
-    forme.style.marginTop = (window.innerHeight - forme.height)*0.2+'px';
+    //forme.style.marginLeft = (window.innerWidth - forme.width)*0.5+'px';
+    //forme.style.marginTop = (window.innerHeight - forme.height)*0.2+'px';
      
     //Recuperation du contexte canvas
     _context = forme.getContext("2d");  
