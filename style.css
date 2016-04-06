@@ -1,1 +1,50 @@
 @CHARSET "UTF-8";
+body{
+margin : 0;
+}
+#board{
+position : fixed;
+
+
+width : 725px;
+}
+
+#haut{
+position : absolute;
+right : 0%;
+top : 0%;
+width : 100%;
+height : 25%;
+background:transparent;
+border:none;
+}
+
+#bas{
+position : absolute;
+top : 75%;
+right : 0%;
+width : 100%;
+height : 25%;
+background:transparent;
+border:none;
+}
+
+#droite{
+position : absolute;
+bottom : 25%;
+right : 0%;
+width : 50%;
+height : 50%;
+background:transparent;
+border:none;
+}
+
+#gauche{
+position : absolute;
+bottom : 25%;
+left : 0%;
+width : 50%;
+height : 50%;
+background:transparent;
+border:none;
+}

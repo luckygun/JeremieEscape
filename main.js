@@ -19,20 +19,21 @@ window.onload = function(){
     dessiner(_context);
     
     var jeremy = new Jeremy(_map);
+	joueur = new Joueur(_map);
     //alert(jeremy.orientation);
     console.log(_map[1][2]);
     //var res = jeremy.canWalk(5, 6);
     
     /*
     for (var i = 0 ; i < 5 ; i++) {
-    	jeremy.turnRight();
-        console.log(jeremy.orientation);
+    	jeremy.turnLeft();
+        console.log(jeremy.getOrientation());
     }
     */
     
     setInterval(function() {
 		jeremy.move();
-	}, 500);
+	}, 200);
     
 	
 }

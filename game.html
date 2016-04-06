@@ -13,12 +13,18 @@
 <script type="text/javascript" src="labyrinthe.js"></script>
 <script type="text/javascript" src="main.js"></script>
 <script type="text/javascript" src="jeremy/jeremy.js"></script>
+<script type="text/javascript" src="Joueur.js"></script>
 
 </head>
 <body>
 	<canvas id="board"> 
 			Votre navigateur ne supporte pas la balise canvas
-		</canvas>
+	</canvas>
+	<button id="haut" onclick="joueur.haut()"></button>
+	<button id="gauche" onclick="joueur.gauche()"></button>
+	<button id="droite" onclick="joueur.droite()"></button> 
+	<button id="bas" onclick="joueur.bas()"></button>
+		
 
 </body>
 <!-- Chargement des scripts-->
